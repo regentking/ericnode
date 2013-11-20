@@ -1,12 +1,9 @@
-module.exports = (grunt) ->
-  # do things that are a pain
-  grunt.initConfig
-    pkg: grunt.file.readJSON('package.json'),
-    concat: {
-      options: {
-        seperator: ';'
-      },
-      dist: {
-        src: ['src/**/*.js'],
-        dest: 'dist/<%= pkg.name %>.js'
+# Create a new configuartion file that grunt can consume
+modules.exports = (grunt) ->
+  __Gruntfile__ = @grunt
 
+  grunt.initalConfig
+     
+    pkg: grunt.file.readJSON('package.json')
+
+  @__Gruntfile__ # prototype

@@ -1,0 +1,13 @@
+{
+    "name": "ericnode",
+    "description": "Head first web development with Node.js and Bower",
+    "version": "0.0.1",
+    "dependencies": {},
+    "dev-Dependencies": {
+      "grunt": "~0.4.2"
+    },
+    "repository": {
+      "type": "git",
+      "link": "git://github.com/regentking/ericnode.git"
+    }
+}

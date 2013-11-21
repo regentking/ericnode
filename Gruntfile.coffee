@@ -22,7 +22,13 @@ module.exports = (grunt) ->
     watch:
       files: ['<%= jshint.files %>']
       tasks: ['jshint', 'jasmine']
-  grunt.loadNpmTasks 'grunt-contrib-coffee' # TODO: add & test sample Gruntfile
+  grunt.loadNpmTasks 'grunt-contrib-coffee'
+  grunt.loadNpmTasks 'grunt-contrib-uglify'
+  grunt.loadNpmTasks 'grunt-contrib-concat'
+  grunt.loadNpmTasks 'grunt-contrib-jshint'
+  grunt.loadNpmTasks 'grunt-contrib-watch'
+  grunt.loadNpmTasks 'grunt-contrib-qunit'
 
-  grunt.registerTask 'default', 'Try logging', ->
-    grunt.log.write('Foo bar baz test')
+  grunt.registerTask 'test', ['jshint', 'qunit']
+
+  grunt.registerTask 'default', ['jshint', 'qunit', 'concat', 'uglify']

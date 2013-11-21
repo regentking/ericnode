@@ -9,7 +9,7 @@ module.exports = (grunt) ->
     uglify:
       options: banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
       dist: files: 'dist/<%= pkg.name %>.min.js': ['<%= concat.dist.dest %>']
-    jasmine:
+    qunit:
       files: ['test/**/*.html']
     jshint:
       files: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js']
@@ -19,5 +19,10 @@ module.exports = (grunt) ->
           console: true
           module: true
           document: true
+    watch:
+      files: ['<%= jshint.files %>']
+      tasks: ['jshint', 'jasmine']
+  grunt.loadNpmTasks 'grunt-contrib-coffee' # TODO: add & test sample Gruntfile
+
   grunt.registerTask 'default', 'Try logging', ->
     grunt.log.write('Foo bar baz test')

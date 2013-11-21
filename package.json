@@ -3,7 +3,9 @@
   "description": "Head first web development with Node.js and Bower",
   "version": "0.0.1",
   "dependencies": {
-    "coffee-jshint": "~0.0.14"
+    "coffee-jshint": "~0.0.14",
+    "lodash": "~1.3.1",
+    "glob": "~3.2.7"
   },
   "dev-Dependencies": {
     "grunt": "~0.4.1",

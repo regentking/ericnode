@@ -1,6 +1,11 @@
 {
     "name": "ericnode",
     "description": "front-end web learnings",
+    "version": "0.0.1",
     "dependencies": {},
-    "dev-dependencies": {}
+    "dev-dependencies": {},
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/regentking/ericnode.git"
+    }
 }

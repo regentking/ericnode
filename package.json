@@ -1,19 +1,23 @@
 {
-    "name": "ericnode",
-    "description": "Head first web development with Node.js and Bower",
-    "version": "0.0.1",
-    "dependencies": {},
-    "dev-Dependencies": {
-      "grunt": "~0.4.1",
-      "grunt-contrib-uglify": "~0.2.7",
-      "grunt-contrib-jasmine": "~0.5.1",
-      "grunt-contrib-concat": "~0.3.0",
-      "grunt-contrib-jshint": "~0.7.2",
-      "grunt-contrib-watch": "~0.5.3",
-      "grunt-styleguide": "~0.2.12"
-    },
-    "repository": {
-      "type": "git",
-      "link": "git://github.com/regentking/ericnode.git"
-    }
+  "name": "ericnode",
+  "description": "Head first web development with Node.js and Bower",
+  "version": "0.0.1",
+  "dependencies": {
+    "coffee-jshint": "~0.0.14"
+  },
+  "dev-Dependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-contrib-jasmine": "~0.5.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-styleguide": "~0.2.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/regentking/ericnode.git"
+  },
+  "main": "Gruntfile.coffee"
 }

@@ -1,0 +1,3 @@
+# We don't mind spiders
+User-Agent: *
+Disallow:
